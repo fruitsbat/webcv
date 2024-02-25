@@ -6,14 +6,14 @@ export default function LanguageLink() {
   const locale = useCurrentLocale();
   if (locale === "en") {
     return (
-      <Link href="/de" className="flex items-center gap-2">
+      <Link href="/de" className="link flex items-center gap-2">
         <FaGlobeEurope />
         <span>deutsch</span>
       </Link>
     );
   }
   return (
-    <Link href="/en" className="flex items-center gap-2">
+    <Link href="/en" className="link flex items-center gap-2">
       <FaGlobeEurope />
       <span>english</span>
     </Link>

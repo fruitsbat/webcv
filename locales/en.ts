@@ -4,4 +4,5 @@ export default {
     "I study Software Engineering at the University of Hamburg.",
   skills: "skills",
   projects: "projects",
+  "avatar.alt": "picture of an orange cat",
 } as const;

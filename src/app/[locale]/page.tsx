@@ -4,7 +4,7 @@ import Hero from "./components/hero";
 
 export default function Home() {
   return (
-    <div className="h-screen snap-y snap-mandatory overflow-y-scroll scroll-smooth">
+    <div className="p-8 h-screen snap-y snap-mandatory overflow-y-scroll scroll-smooth">
       <Hero />
       <Skills />
       <Projects />

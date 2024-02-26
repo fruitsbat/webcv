@@ -1,9 +1,10 @@
 import Link from "next/link";
+import { useParams } from "next/navigation";
 import { FaGlobeEurope } from "react-icons/fa";
-import { useCurrentLocale } from "../../../../locales/client";
 
 export default function LanguageLink() {
-  const locale = useCurrentLocale();
+  // find locale
+  const locale = useParams().locale.at(-1);
   if (locale === "en") {
     return (
       <Link href="/de" className="link flex items-center gap-2">

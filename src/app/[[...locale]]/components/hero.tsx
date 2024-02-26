@@ -5,7 +5,7 @@ import NavigationButtons from "./navigationButtons";
 import AboutMe from "./aboutMe";
 import Avatar from "./avatar";
 
-export default function Projects() {
+export default function Hero() {
   return (
     <div
       id="top"

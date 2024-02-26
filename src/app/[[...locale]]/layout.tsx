@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { useParams } from "next/navigation";
 import { I18nProviderClient } from "../../../locales/client";
 import "../globals.css";
 
 export async function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "de" }];
+  return [{ locale: ["en"] }, { locale: ["de"] }, { locale: [] }];
 }
 
 export const metadata: Metadata = {
@@ -15,13 +14,25 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
   params: { locale },
-}: Readonly<{
+}: {
   children: React.ReactNode;
-  params: { locale: string };
-}>) {
+  params: { locale: string[] };
+}) {
+  // return the language selector of no locale can be found
+  if (!locale) {
+    return (
+      <html>
+        <body>
+          <div>funny kitty moment</div>
+        </body>
+      </html>
+    );
+  }
+
+  // return the regular page if there is a locale selected
   return (
-    <html lang={locale}>
-      <I18nProviderClient locale={locale}>
+    <html lang={locale.at(-1)}>
+      <I18nProviderClient locale={locale.at(-1)!}>
         <body>{children}</body>
       </I18nProviderClient>
     </html>

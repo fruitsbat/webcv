@@ -20,7 +20,7 @@ export default function RootLayout({
   params: { locale: string };
 }>) {
   return (
-    <html className="snap-mandatory scroll-smooth" lang={locale}>
+    <html lang={locale}>
       <I18nProviderClient locale={locale}>
         <body>{children}</body>
       </I18nProviderClient>

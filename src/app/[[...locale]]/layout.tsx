@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { I18nProviderClient } from "../../../locales/client";
 import "../globals.css";
+import LanguagePicker from "./components/languagePicker";
 
 export async function generateStaticParams() {
   return [{ locale: ["en"] }, { locale: ["de"] }, { locale: [] }];
@@ -23,7 +24,7 @@ export default function RootLayout({
     return (
       <html>
         <body>
-          <div>funny kitty moment</div>
+          <LanguagePicker />
         </body>
       </html>
     );

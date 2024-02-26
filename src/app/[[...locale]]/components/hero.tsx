@@ -1,31 +1,25 @@
-"use client";
-
-import LanguageLink from "./languageLink";
-import NavigationButtons from "./navigationButtons";
 import AboutMe from "./aboutMe";
 import Avatar from "./avatar";
+import NavigationButtons from "./navigationButtons";
 
 export default function Hero() {
   return (
-    <div
-      id="top"
-      className="flex h-screen snap-start flex-col items-center justify-center gap-24"
-    >
-      <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
-        <div className="hidden md:block">
+    <div className="p-6">
+      <div className="flex items-center gap-6">
+        <div className="w-32 flex-initial sm:w-64">
           <Avatar />
         </div>
-        <div className="flex flex-row gap-4 md:col-span-2">
-          <div className="aspect-square h-full flex-1 flex-grow-0 md:hidden">
-            <Avatar />
-          </div>
-          <div className="flex h-full flex-1 flex-grow flex-col justify-center gap-6">
-            <AboutMe />
+        <div className="flex w-5/6 flex-col gap-4">
+          <AboutMe />
+          <div className="hidden md:block">
+          <NavigationButtons />
           </div>
         </div>
+        <div className="col-span-7"></div>
+      </div>
+      <div className="md:hidden p-6">
         <NavigationButtons />
       </div>
-      <LanguageLink />
     </div>
   );
 }

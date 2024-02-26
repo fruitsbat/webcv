@@ -1,11 +1,11 @@
 import Projects from "./components/projects";
 import Skills from "./components/skills";
-import Hero from "./components/hero";
+import Top from "./components/top";
 
 export default function Home() {
   return (
-    <div className="p-8 h-screen snap-y snap-mandatory overflow-y-scroll scroll-smooth">
-      <Hero />
+    <div className="h-screen snap-y snap-mandatory overflow-y-scroll scroll-smooth p-0">
+      <Top />
       <Skills />
       <Projects />
     </div>

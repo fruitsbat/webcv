@@ -13,7 +13,7 @@ export default function LanguageLink({ locale }: { locale: string }) {
     );
   }
   return (
-    <Link href="/en" className="btn flex items-center gap-2">
+    <Link href="/en" className="btn btn-ghost flex items-center gap-2">
       <FaGlobeEurope />
       <span>english</span>
     </Link>

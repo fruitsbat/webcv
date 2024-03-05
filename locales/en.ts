@@ -1,8 +1,11 @@
 export default {
-  "about.me.heading": "Hi, i'm Zoe",
+  "about.me.heading": "Hi, i'm Zoe!",
   "about.me.description":
-    "I study Software Engineering at the University of Hamburg.",
+    "I study Software Engineering at the University of Hamburg and like to learn new things about computers.",
   skills: "skills",
   projects: "projects",
   "avatar.alt": "picture of an orange cat",
+  "cv.link": "CV-en.pdf",
+  "cv.name": "CV",
+  "to-top": "to top",
 } as const;

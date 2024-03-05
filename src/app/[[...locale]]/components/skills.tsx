@@ -1,7 +1,3 @@
-import { FaRust, FaJava } from "react-icons/fa";
-import { BiLogoTypescript } from "react-icons/bi";
-import { SiNginx } from "react-icons/si";
-
 export default function Skills() {
   return (
     <section

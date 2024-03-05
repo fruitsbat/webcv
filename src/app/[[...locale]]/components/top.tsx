@@ -11,13 +11,31 @@ export default function Top() {
 
   return (
     <div id="top" className="flex h-screen w-full snap-start flex-col">
-      <div className="navbar flex flex-row items-center justify-between bg-gradient-to-t from-transparent to-base-300 p-4 gap-2 px-6">
-        <div className="flex flex-row gap-2">
-          <Link className="btn btn-ghost" href="mailto://mail@zoeoosting.de">
+      <div className="navbar flex flex-row items-center justify-between gap-2 bg-gradient-to-t from-transparent to-base-300 p-4 px-6">
+        <div className="flex flex-row gap-6">
+          {/* phone buttons */}
+          <div className="tooltip tooltip-bottom sm:hidden" data-tip="mail">
+            <Link href="mailto://mail@zoeoosting.de">
+              <FaEnvelope />
+            </Link>
+          </div>{" "}
+          <div className="tooltip tooltip-bottom sm:hidden" data-tip="github">
+            <Link href="https://github.com/fruitsbat">
+              <FaGithub />
+            </Link>
+          </div>
+          {/* desktop buttons */}
+          <Link
+            className="btn btn-ghost hidden sm:flex"
+            href="mailto://mail@zoeoosting.de"
+          >
             <FaEnvelope />
             mail@zoeoosting.de
           </Link>
-          <Link className="btn btn-ghost" href="https://github.com/fruitsbat">
+          <Link
+            className="btn btn-ghost hidden sm:flex"
+            href="https://github.com/fruitsbat"
+          >
             <FaGithub />
             github
           </Link>

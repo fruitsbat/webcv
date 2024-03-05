@@ -5,43 +5,43 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
 export default function LanguagePicker() {
-  function computeLocale(
-    userLocales: Array<string>,
-    supportedLocales: Array<string>,
-  ): string | null {
-    for (let userLocale in userLocales) {
-      userLocale = userLocales[userLocale];
-      /// first look for exact matches
-      const exactMatch = supportedLocales.find((supportedLocale) => {
-        return userLocale === supportedLocale;
-      });
-      if (exactMatch) {
-        return exactMatch;
-      }
-      /// then try to match for the beginning
-      const beginningMatch = supportedLocales.find((supportedLocale) => {
-        return userLocale.startsWith(supportedLocale);
-      });
-      if (beginningMatch) {
-        return beginningMatch;
-      }
-    }
-    return null;
-  }
-
-  /// use language first
-  const userLocales = navigator.languages.length
-    ? navigator.languages
-    : [navigator.language];
-  const supportedLocales = ["en", "de"];
-  const matchingLocale = computeLocale(
-    userLocales as Array<string>,
-    supportedLocales,
-  );
-
   /// navigate to matching locale if one is found
   const router = useRouter();
   useEffect(() => {
+    function computeLocale(
+      userLocales: Array<string>,
+      supportedLocales: Array<string>,
+    ): string | null {
+      for (let userLocale in userLocales) {
+        userLocale = userLocales[userLocale];
+        /// first look for exact matches
+        const exactMatch = supportedLocales.find((supportedLocale) => {
+          return userLocale === supportedLocale;
+        });
+        if (exactMatch) {
+          return exactMatch;
+        }
+        /// then try to match for the beginning
+        const beginningMatch = supportedLocales.find((supportedLocale) => {
+          return userLocale.startsWith(supportedLocale);
+        });
+        if (beginningMatch) {
+          return beginningMatch;
+        }
+      }
+      return null;
+    }
+
+    /// use language first
+    const userLocales = navigator.languages.length
+      ? navigator.languages
+      : [navigator.language];
+    const supportedLocales = ["en", "de"];
+    const matchingLocale = computeLocale(
+      userLocales as Array<string>,
+      supportedLocales,
+    );
+
     if (matchingLocale) {
       router.push(`/${matchingLocale}`);
     }

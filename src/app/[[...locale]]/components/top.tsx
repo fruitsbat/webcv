@@ -12,15 +12,15 @@ export default function Top() {
   return (
     <div id="top" className="flex h-screen w-full snap-start flex-col">
       <div className="navbar flex flex-row items-center justify-between gap-2 bg-gradient-to-t from-transparent to-base-300 p-4 px-6">
-        <div className="flex flex-row gap-6">
+        <div className="flex flex-row gap-0">
           {/* phone buttons */}
           <div className="tooltip tooltip-bottom sm:hidden" data-tip="mail">
-            <Link href="mailto://mail@zoeoosting.de">
+            <Link className="btn btn-circle btn-ghost" href="mailto://mail@zoeoosting.de">
               <FaEnvelope />
             </Link>
           </div>{" "}
           <div className="tooltip tooltip-bottom sm:hidden" data-tip="github">
-            <Link href="https://github.com/fruitsbat">
+            <Link className="btn btn-circle btn-ghost" href="https://github.com/fruitsbat">
               <FaGithub />
             </Link>
           </div>

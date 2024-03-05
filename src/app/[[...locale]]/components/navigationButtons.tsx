@@ -6,11 +6,11 @@ export default function NavigationButtons() {
   const t = useI18n();
   return (
     <div className="grid w-full sm:grid-cols-2 md:grid-cols-3 gap-4">
-      <a className="btn btn-primary btn-block" href="#skills">
+      <a className="btn btn-neutral btn-block" href="#skills">
         <FaCode />
         {t("skills")}
       </a>
-      <a className="btn  btn-secondary btn-block" href="#projects">
+      <a className="btn  btn-neutral btn-block" href="#projects">
         <FaPaintBrush />
         {t("projects")}
       </a>

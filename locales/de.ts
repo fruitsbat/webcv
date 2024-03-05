@@ -5,7 +5,7 @@ export default {
   skills: "Kenntnisse",
   projects: "Projekte",
   "avatar.alt": "Bild von einer orangen Katze",
-  "cv.link": "CV-de.pdf",
+  "cv.link": "CV-DE.pdf",
   "cv.name": "Lebenslauf",
   "to-top": "nach oben",
 } as const;

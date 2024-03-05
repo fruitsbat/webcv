@@ -5,7 +5,7 @@ export default {
   skills: "skills",
   projects: "projects",
   "avatar.alt": "picture of an orange cat",
-  "cv.link": "CV-en.pdf",
+  "cv.link": "CV-EN.pdf",
   "cv.name": "CV",
   "to-top": "to top",
 } as const;

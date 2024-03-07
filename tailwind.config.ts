@@ -23,7 +23,7 @@ const config: Config = {
       sans: ["Comfortaa"],
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("@tailwindcss/container-queries")],
   daisyui: {
     themes: [
       {

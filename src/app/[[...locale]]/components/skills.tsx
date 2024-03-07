@@ -34,11 +34,16 @@ export default function Skills() {
   const t = useI18n();
   const carouselItems: Array<SkillCarouselItemProps> = [
     {
-      title: "Network Programming",
-      description: "I love doing this",
-      imageDescription: "kdsjfksdjf",
-      imageURL: "sdklfjskdfj",
-      skills: [skills.rust, skills.go, skills.nginx],
+      title: "Git",
+      description: t("git.description"),
+      imageDescription: t("git-logo.description"),
+      imageURL: "/git.webp",
+      skills: [
+        skills.gitCLI,
+        skills.github,
+        skills.githubActions,
+        skills.gitea,
+      ],
     },
     {
       title: "Git",
@@ -56,11 +61,11 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="flex h-screen snap-start flex-col items-center justify-center gap-6 p-6 md:gap-24 xl:p-24"
+      className="@container flex h-screen snap-start flex-col items-center justify-center gap-6 p-6 md:gap-24 xl:p-24"
     >
       <h2 className="text-2xl font-black">{t("skills")}</h2>
-      <div className="drop-shadow-primary carousel carousel-center h-[60dvh] max-w-6xl space-y-6 rounded-box bg-neutral p-6">
-        {carouselItems.map((item) => {
+      <div className="carousel carousel-center w-full space-x-4">
+        {carouselItems.map((item, index) => {
           return (
             <SkillCarouselItem
               key={item.title}
@@ -69,6 +74,8 @@ export default function Skills() {
               imageDescription={item.imageDescription}
               imageURL={item.imageURL}
               skills={item.skills}
+              index={index}
+              totalCount={carouselItems.length}
             />
           );
         })}

@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div
       ref={scrollRef}
-      className="h-screen snap-y snap-mandatory overflow-y-scroll scroll-smooth p-0"
+      className="h-[100dvh] snap-y snap-mandatory overflow-y-scroll scroll-smooth p-0"
     >
       <Top />
       {/* <Skills />

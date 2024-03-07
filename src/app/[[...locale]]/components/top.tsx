@@ -12,7 +12,7 @@ export default function Top() {
   const t = useI18n();
 
   return (
-    <div id="top" className="flex h-screen w-full snap-start flex-col">
+    <div id="top" className="flex h-full w-full snap-start flex-col">
       <div className="navbar flex flex-row items-center justify-between gap-2 bg-gradient-to-t from-transparent to-base-300 p-4 px-6">
         <div className="flex flex-row gap-0">
           {/* phone buttons */}

@@ -18,6 +18,11 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  theme: {
+    fontFamily: {
+      sans: ["Comfortaa"],
+    },
+  },
   plugins: [require("daisyui")],
   daisyui: {
     themes: [

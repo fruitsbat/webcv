@@ -4,8 +4,8 @@ import NavigationButtons from "./navigationButtons";
 
 export default function Hero() {
   return (
-    <div className="p-6">
-      <div className="flex items-center gap-6">
+    <div className="p-6 xl:p-24">
+      <div className="flex items-center gap-6 xl:gap-24">
         <div className="w-32 flex-initial sm:w-64">
           <Avatar />
         </div>

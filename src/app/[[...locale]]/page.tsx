@@ -17,9 +17,9 @@ export default function Home() {
       className="h-[100dvh] snap-y snap-mandatory overflow-y-scroll scroll-smooth p-0"
     >
       <Top />
-      {/* <Skills />
-      <Projects />
-      <ToastToTop scrollPositon={scrollY} /> */}
+      {/* <Skills /> */}
+      {/*<Projects />*/}
+      {/*<ToastToTop scrollPositon={scrollY} /> */}
     </div>
   );
 }

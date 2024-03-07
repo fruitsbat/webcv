@@ -2,7 +2,7 @@ export default {
   "about.me.heading": "Hi, i'm Zoe!",
   "about.me.description":
     "I study Software Engineering at the University of Hamburg and like to learn new things about computers.",
-  skills: "skills",
+  skills: "what i do",
   projects: "projects",
   "avatar.alt": "a person in a black dress is standing in front of a canvas that has colorful lights pointed at it",
   "cv.link": "CV-EN.pdf",

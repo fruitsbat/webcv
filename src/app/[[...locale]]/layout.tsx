@@ -23,7 +23,7 @@ export default function RootLayout({
   // return the language selector of no locale can be found
   if (!locale) {
     return (
-      <html>
+      <html className="text-neutral">
         <body>
           <LanguagePicker />
         </body>
@@ -33,7 +33,7 @@ export default function RootLayout({
 
   // return the regular page if there is a locale selected
   return (
-    <html lang={locale.at(-1)}>
+    <html lang={locale.at(-1)} className="text-neutral">
       <I18nProviderClient locale={locale.at(-1)!}>
         <body>{children}</body>
       </I18nProviderClient>

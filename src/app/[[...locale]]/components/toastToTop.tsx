@@ -12,10 +12,11 @@ export default function ToastToTop({
 
   return (
     <div className={`toast toast-end ${scrollPositon > 0? "" : "hidden"}`}>
-      <a className="btn btn-secondary" href="#top">
+      <a className="btn drop-shadow-2xl btn-secondary" href="#top">
         <FaArrowUp />
         <span>{t("to-top")}</span>
       </a>
     </div>
   );
 }
+ 

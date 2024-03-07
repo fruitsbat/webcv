@@ -6,15 +6,15 @@ export default function LanguageLink({ locale }: { locale: string }) {
   if (locale === "en") {
     return (
       <Link href="/de" className="btn btn-ghost flex items-center gap-2">
-        <FaLanguage className="w-6 h-6"/>
-        <span>deutsch</span>
+        <FaLanguage className="h-6 w-6" />
+        <span lang="de">deutsch</span>
       </Link>
     );
   }
   return (
     <Link href="/en" className="btn btn-ghost flex items-center gap-2">
-      <FaLanguage className="w-6 h-6" />
-      <span>english</span>
+      <FaLanguage className="h-6 w-6" />
+      <span lang="en">english</span>
     </Link>
   );
 }

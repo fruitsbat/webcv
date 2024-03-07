@@ -10,7 +10,7 @@ export default function AboutMe() {
         width={1}
         height={1}
         alt={t("avatar.alt")}
-        className="aspect-square rounded-full shadow ring ring-primary"
+        className="aspect-square rounded-full"
       />
     </div>
   );

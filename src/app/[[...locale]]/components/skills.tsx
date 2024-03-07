@@ -61,10 +61,10 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="@container flex h-screen snap-start flex-col items-center justify-center gap-6 p-6 md:gap-24 xl:p-24"
+      className="@container flex h-[100dvh] snap-start flex-col items-center justify-center gap-6 p-6 md:gap-24 xl:p-24"
     >
       <h2 className="text-2xl font-black">{t("skills")}</h2>
-      <div className="carousel carousel-center w-full space-x-4">
+      <div className="carousel carousel-center h-full w-full space-x-4">
         {carouselItems.map((item, index) => {
           return (
             <SkillCarouselItem

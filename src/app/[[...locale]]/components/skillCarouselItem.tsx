@@ -39,12 +39,12 @@ export default function SkillCarouselItem({
   return (
     <div
       id={`skillCarousel-${index}`}
-      className="@container carousel-item join join-vertical flex w-4/5 max-w-4xl flex-col rounded-2xl bg-base-200 md:min-w-96"
+      className="@container  carousel-item join join-vertical flex w-4/5 max-w-4xl flex-col rounded-2xl bg-base-200 md:min-w-96"
     >
       <div className="@2xl:card-side card join-item w-full">
-        <figure className="aspect-video lg:aspect-square lg:h-full lg:w-1/3">
+        <figure className="aspect-video lg:aspect-square lg:h-full lg:w-1/3 p-4">
           <img
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover rounded-2xl ring-neutral ring-4"
             alt={imageDescription}
             src={imageURL}
           />

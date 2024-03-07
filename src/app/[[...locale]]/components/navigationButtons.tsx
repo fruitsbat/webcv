@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useI18n } from "../../../../locales/client";
 import { FaCode, FaFilePdf, FaPaintBrush } from "react-icons/fa";
 
@@ -14,10 +13,10 @@ export default function NavigationButtons() {
         <FaPaintBrush />
         {t("projects")}
       </a>
-      <Link className="btn btn-neutral btn-block col-span-2 md:col-span-1" href={t("cv.link")}>
+      <a className="btn btn-neutral btn-block col-span-2 md:col-span-1" href={t("cv.link")}>
         <FaFilePdf />
         {t("cv.name")}
-      </Link>
+      </a>
     </div>
   );
 }

@@ -8,4 +8,6 @@ export default {
   "cv.link": "CV-EN.pdf",
   "cv.name": "CV",
   "to-top": "to top",
+  "email-link.description": "mailto link for email address",
+  "github-link.description": "link to my github profile",
 } as const;

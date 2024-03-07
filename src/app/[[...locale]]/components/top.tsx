@@ -5,9 +5,11 @@ import Hero from "./hero";
 import LanguageLink from "./languageLink";
 import { useParams } from "next/navigation";
 import { FaGithub, FaEnvelope } from "react-icons/fa";
+import { useI18n } from "../../../../locales/client";
 
 export default function Top() {
   const locale = useParams().locale.at(-1)!;
+  const t = useI18n();
 
   return (
     <div id="top" className="flex h-screen w-full snap-start flex-col">
@@ -15,12 +17,20 @@ export default function Top() {
         <div className="flex flex-row gap-0">
           {/* phone buttons */}
           <div className="tooltip tooltip-bottom sm:hidden" data-tip="mail">
-            <Link className="btn btn-circle btn-ghost" href="mailto://mail@zoeoosting.de">
+            <Link
+              className="btn btn-circle btn-ghost"
+              href="mailto:mail@zoeoosting.de"
+              aria-description={t("email-link.description")}
+            >
               <FaEnvelope />
             </Link>
           </div>{" "}
           <div className="tooltip tooltip-bottom sm:hidden" data-tip="github">
-            <Link className="btn btn-circle btn-ghost" href="https://github.com/fruitsbat">
+            <Link
+              className="btn btn-circle btn-ghost"
+              href="https://github.com/fruitsbat"
+              aria-description={t("github-link.description")}
+            >
               <FaGithub />
             </Link>
           </div>

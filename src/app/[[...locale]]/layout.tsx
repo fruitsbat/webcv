@@ -8,8 +8,9 @@ export async function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: "zoe's portfolio",
-  description: "zoe's portfolio",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +24,6 @@ export default function RootLayout({
   if (!locale) {
     return (
       <html>
-        <Head />
         <body>
           <LanguagePicker />
         </body>
@@ -34,18 +34,9 @@ export default function RootLayout({
   // return the regular page if there is a locale selected
   return (
     <html lang={locale.at(-1)}>
-      <Head />
       <I18nProviderClient locale={locale.at(-1)!}>
         <body>{children}</body>
       </I18nProviderClient>
     </html>
-  );
-}
-
-function Head() {
-  return (
-    <head>
-      <link rel="shortcut icon" href="code-solid.svg" />
-    </head>
   );
 }

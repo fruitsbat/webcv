@@ -4,7 +4,7 @@ export default {
     "Ich studiere Software-System-Entwicklung an der Universität Hamburg und lerne gern neues über Technologie.",
   skills: "Kenntnisse",
   projects: "Projekte",
-  "avatar.alt": "Bild von einer orangen Katze",
+  "avatar.alt": "eine Person in einem schwarzen Kleid steht vor Leinwand, auf die bunte lichter scheinen",
   "cv.link": "CV-DE.pdf",
   "cv.name": "Lebenslauf",
   "to-top": "nach oben",

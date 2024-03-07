@@ -20,7 +20,7 @@ export default function Top() {
             <Link
               className="btn btn-circle btn-ghost"
               href="mailto:mail@zoeoosting.de"
-              aria-description={t("email-link.description")}
+              aria-label={t("email-link.description")}
             >
               <FaEnvelope />
             </Link>
@@ -29,7 +29,7 @@ export default function Top() {
             <Link
               className="btn btn-circle btn-ghost"
               href="https://github.com/fruitsbat"
-              aria-description={t("github-link.description")}
+              aria-label={t("github-link.description")}
             >
               <FaGithub />
             </Link>

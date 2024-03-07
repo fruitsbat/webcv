@@ -37,7 +37,7 @@ export default function Top() {
           {/* desktop buttons */}
           <Link
             className="btn btn-ghost hidden sm:flex"
-            href="mailto://mail@zoeoosting.de"
+            href="mailto:mail@zoeoosting.de"
           >
             <FaEnvelope />
             mail@zoeoosting.de

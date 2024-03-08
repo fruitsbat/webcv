@@ -23,7 +23,7 @@ const config: Config = {
       sans: ["Comfortaa"],
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("@tailwindcss/container-queries")],
   daisyui: {
     themes: [
       {
@@ -34,6 +34,9 @@ const config: Config = {
           neutral: "#080b08",
           "base-100": "#f7f9f7",
           ...themeShape,
+          ".drop-shadow-primary": {
+            filter: "drop-shadow(0 10px 8px #59ae59)",
+          },
         },
       },
       {
@@ -44,6 +47,9 @@ const config: Config = {
           neutral: "#f3f6f3",
           "base-100": "#070907",
           ...themeShape,
+          ".drop-shadow-primary": {
+            filter: "drop-shadow(0 10px 8px #aacdaa)",
+          },
         },
       },
     ],

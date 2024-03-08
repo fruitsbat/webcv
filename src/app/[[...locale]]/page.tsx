@@ -25,9 +25,9 @@ export default function Home() {
       <meta property="og:description" content={t("about.me.description")} />
       <meta property="og:image" content="/myFace.webp" />
       <Top />
-      {/* <Skills /> */}
+      <Skills />
       {/*<Projects />*/}
-      <ToastToTop scrollPositon={scrollY} />
+      {/* <ToastToTop scrollPositon={scrollY} /> */}
     </div>
   );
 }

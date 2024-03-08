@@ -14,7 +14,7 @@ export default {
   "git.description":
     "Für mein allererstes großes Programmierprojekt habe ich git entdeckt.\
   Aus dem Projekt ist nie was geworden, aber ich benutze seitdem für jedes Projekt git.\
-  Ebenfalls betreibe ich auch meinen eigenen Gitea Server, der sehr viel gebrauch findet.",
+  Ebenfalls betreibe ich auch meinen eigenen Gitea Server, der sehr viel Gebrauch findet.",
   "git-logo.description":
     "ein Sticker mit dem Git logo. Das logo besteht aus dem schriftzu git und einer visuellen representation von branches",
   "backend-web-development": "Backend-Web-Entwicklung",
@@ -25,7 +25,7 @@ export default {
     "Ein Bild von RJ45 Kabeln in einem Gerät.",
   "frontend-web-development": "Frontend-Web-Entwicklung",
   "frontend-web-development.description":
-    "Das Frontend macht mir besonders viel Spaß, da hier die Kreativität von Design mit der kreativen Problembewältigung von programmierung kombiniert wird.",
+    "Das Frontend macht mir besonders viel Spaß, da hier die Kreativität von Design mit der kreativen Problembewältigung von Programmierung kombiniert wird.",
   "frontend-web-development.image.description": "Ein bild von React Code",
   homelab: "Homelab",
   "homelab.description":
@@ -36,13 +36,13 @@ export default {
   "homelab.image.description": "cool image",
   linux: "Linux",
   "linux.description":
-    "Ich benutze schon seit Jahren linux auf meinem persönlichen Computern, sowie auf servern.\
+    "Ich benutze schon seit Jahren Linux auf meinem persönlichen Computern, sowie auf Servern.\
     Auch liebe ich es, wenn Linux auf unorthodoxen Geräten wie zum Beispiel Spielekonsolen läuft.",
   "linux.image.description": "einige Pinguine an einem felsigen Strand",
   gamedev: "Spieleentwicklung",
   "gamedev.description":
-    "Ich entwickle gerne Spiele und haben an einigen Game Jams teilgenommen.\
-  Da hier besonders viele Disziplinen wie Programmierung, Musik und Grafik zusammenkommen gibt es immer etwas zu lernen.",
+    "Ich entwickle gerne Spiele und habe an einigen Game Jams teilgenommen.\
+  Da hier besonders viele Disziplinen wie Programmierung, Musik und Grafik zusammenkommen, gibt es immer etwas zu lernen.",
   "gamedev.image.description":
     "Ein Bild von einem Joystick auf einer Arcade-Maschine",
   previous: "zurück",

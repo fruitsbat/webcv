@@ -4,6 +4,7 @@ import { SkillCarouselItemProps } from "./skillCarouselItem";
 import {
   SiAlpinelinux,
   SiAngular,
+  SiArchlinux,
   SiAseprite,
   SiBlender,
   SiCsharp,
@@ -159,8 +160,13 @@ const skills = {
   alpine: {
     icon: <SiAlpinelinux />,
     name: "Alpine",
-    link: "https://www.alpinelinux.org/"
-  }
+    link: "https://www.alpinelinux.org/",
+  },
+  arch: {
+    icon: <SiArchlinux />,
+    name: "Arch",
+    link: "https://archlinux.org/",
+  },
 };
 
 export default function Skills() {
@@ -216,7 +222,14 @@ export default function Skills() {
       description: t("linux.description"),
       imageDescription: t("linux.image.description"),
       imageURL: "/linux.webp",
-      skills: [skills.debian, skills.ubuntu, skills.nixos, skills.opensuse, skills.alpine],
+      skills: [
+        skills.debian,
+        skills.ubuntu,
+        skills.nixos,
+        skills.opensuse,
+        skills.alpine,
+        skills.arch,
+      ],
     },
     {
       title: t("gamedev"),

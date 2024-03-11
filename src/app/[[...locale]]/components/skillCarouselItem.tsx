@@ -45,9 +45,9 @@ export default function SkillCarouselItem({
       className="drop-shadow-primary carousel-item join join-vertical flex h-full w-full flex-col justify-between overflow-y-auto rounded-2xl bg-base-100 @container md:min-w-96"
     >
       <div className="card join-item w-full flex-1 justify-between @2xl:card-side">
-        <figure className="flex-1 flex-grow-[2] @2xl:flex-grow-[5]">
+        <figure className="flex-1 flex-grow-[2] @2xl:flex-grow-[3]">
           <img
-            className="h-full w-full object-cover ring-4 ring-neutral"
+            className="h-full w-full object-cover ring-4"
             alt={imageDescription}
             src={imageURL}
           />
